@@ -892,68 +892,6 @@ color: #666;
      <a href="https://whatsapp.com/channel/0029Va2BQBoADTO8XdZzde3u" target="_blank"><i class="fab fa-whatsapp"></i> <span>تابعنا على الواتساب</span></a>
       <a href="mailto:dailymatchapk@gmail.com?subject= استفسار بخصوص تطبيق النملة تيفي بيتا&body= السلام عليكم، لدي مشكلة تتعلق بـ"  target="_blank" class="mail"><i class="fas fa-envelope"></i> <span> لمراسلتنا عبر البريد </span></a>     
            
-<!-- زر دعم المطور -->
-<a onclick="showRewardedAd()" class="logout">
-    <span>لدعم المطور </span>   
-    <i class="fa-solid fa-hand-holding-dollar"></i>
-</a>  
-
-<!-- إضافة سكربت AdMob -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<script>
-  // تعريف ID لوحدة إعلان AdMob Rewarded Video
-  const adUnitId = 'ca-app-pub-1339640444988278/7740067870'; // استبدال بـ Ad Unit ID الفعلي الخاص بك
-
-  let rewardedAd;
-
-  // تحميل إعلان الفيديو المكافئ
-  function loadRewardedAd() {
-    rewardedAd = new google.ads.rewardedvideo.Ad({
-      adUnitId: adUnitId
-    });
-
-    rewardedAd.on('loaded', function() {
-      console.log('Rewarded ad loaded');
-    });
-
-    rewardedAd.on('failed', function() {
-      console.log('Failed to load rewarded ad');
-    });
-  }
-
-  // عرض إعلان الفيديو المكافئ
-  function showRewardedAd() {
-    if (rewardedAd) {
-      rewardedAd.show().then(function() {
-        // هنا، يمكنك إضافة المكافأة التي ستحصل عليها بعد مشاهدة الإعلان
-        console.log('Ad watched, reward granted');
-      }).catch(function() {
-        console.log('Failed to show the ad');
-      });
-    } else {
-      console.log('Rewarded ad not loaded yet');
-      loadRewardedAd();  // أعد تحميل الإعلان إذا لم يتم تحميله بعد
-    }
-  }
-
-  // تحميل الإعلان عند تحميل الصفحة
-  window.onload = loadRewardedAd;
-</script>
-
-<style>
-    .logout {
-        color: #fff;
-        background-color: ;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-
-    .logout:hover {
-        background-color: ;
-    }
-</style>
         
        
  </div>
@@ -1000,7 +938,7 @@ color: #666;
         <span>تحميل التطبيق </span><i class="fa fa-download" style="color:#197"></i>
     </button>
     <!-- زر تحميل المشغل -->
-    <button onclick="location.href='//www.mediafire.com/file/evu0domxttqottb/Daily_Match_5.1.apk/file'" type="button" class="download-btn" style="color:#eee" id="download-btn">
+    <button onclick="location.href='https://play.google.com/store/apps/details?id=com.xpola.player'" type="button" class="download-btn" style="color:#eee" id="download-btn">
         <span>تحميل المشغل </span><i class="fa fa-circle-play" style="color:#197"></i>
     </button>
 </div>
